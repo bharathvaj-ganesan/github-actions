@@ -6,10 +6,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@master
-      - name: npm install
-        uses: actions/npm@master
-        with:
-          args: install
+      - run: npm ci
       - name: docker build
         uses: actions/docker/cli@master
         with:
