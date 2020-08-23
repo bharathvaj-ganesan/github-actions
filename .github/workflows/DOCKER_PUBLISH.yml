@@ -1,5 +1,5 @@
+name: DOCKER PUBLISH
 on: push
-name: npm testing
 jobs:
   build-and-publish:
     name: build and publish
